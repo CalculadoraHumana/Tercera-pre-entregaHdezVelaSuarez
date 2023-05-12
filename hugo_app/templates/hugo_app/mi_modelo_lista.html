@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Mi Modelo Lista</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Campo1</th>
+        <th>Campo2</th>
+        <th>Campo3</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for objeto in objetos %}
+      <tr>
+        <td>{{ objeto.campo1 }}</td>
+        <td>{{ objeto.campo2 }}</td>
+        <td>{{ objeto.campo3 }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
